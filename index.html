@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet"href="gs.css">
+   <script src="gs.js"></script>
+  <title>Gaming Store</title>
+</head>
+<body>
+   <header>
+     <div id="scroll-progress"></div>
+     <button id="topBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">⬆</button>
+     <marquee>
+       Welcome to (Raptor Store)
+     </marquee>
+     <h1 id="Home">Raptor Gaming Store</h1>
+     <hr>
+     <div class="header-tools">
+
+  <button class="menu-icon" onclick="toggleMenu()">☰</button>
+
+  <div class="search-box">
+    <input type="search" id="searchInput" placeholder="...Search">
+    <button type="button" onclick="searchProducts()">⌕</button>
+  </div>
+
+  <button class="user-icon" onclick="showUser()">👤</button>
+
+</div>
+
+<div id="menu" class="menu">
+  <button class="close-menu" onclick="toggleMenu()">×</button>
+  <h3>RAPTOR MENU</h3>
+  <a href="#Home">Home</a>
+  <a href="#Products">Products</a>
+  <a href="#Offers">Offers</a>
+  <a href="#About">About US</a>
+  <a href="#Contact">Contact</a>
+  <a href="gsfa.html">فارسی</a>
+  <button class="theme-btn" onclick="toggleTheme()">
+</div>
+   <section class="Products">
+     <h2 id="Products">Products</h2>
+     <div class="products-container">
+  <div class="product-card">
+    <img src="codm.png" alt="Call of Duty Mobile">
+    <h3>Call of Duty Mobile</h3>
+    <p>Call Of Duty CP</p>
+    <div class="product-price">Price: 140$</div>
+  </div>
+
+  <div class="product-card">
+    <img src="pubg.png" alt="PUBG Mobile">
+    <h3>PUBG Mobile</h3>
+    <p>PUBG Mobile UC</p>
+    <div class="product-price">Price: 120$</div>
+  </div>
+
+  <div class="product-card">
+    <img src="freefire.png" alt="Free Fire">
+    <h3>Free Fire</h3>
+    <p>Free Fire GEM</p>
+    <div class="product-price">Price: 112.50$</div>
+  </div>
+
+  <div class="product-card">
+    <img src="clash.png" alt="Clash of Clans">
+    <h3>Clash of Clans</h3>
+    <p>Clash Of Clans GEM</p>
+    <div class="product-price">Price: 70$</div>
+  </div>
+
+  <div class="product-card">
+    <img src="deltaforce.png" alt="Delta Force">
+    <h3>Delta Force</h3>
+    <p>Delta Force GEM</p>
+    <div class="product-price">Price: 90$</div>
+  </div>
+
+  <div class="product-card">
+    <img src="efootball.png" alt="eFootball">
+    <h3>eFootball</h3>
+    <p>eFootball Point</p>
+    <div class="product-price">Price: 75$</div>
+  </div>
+
+  <div class="product-card">
+    <img src="samp.png" alt="SA-MP">
+    <h3>SA-MP</h3>
+    <p>SA-MP Gold</p>
+    <div class="product-price">Price: 70$</div>
+  </div>
+
+  <div class="product-card">
+    <img src="bool.png" alt="8 Ball Pool">
+    <h3>8 Ball Pool</h3>
+    <p>8 Ball Pool Point</p>
+    <div class="product-price">Price: 75$</div>
+  </div>
+   <button class="Buy1">Buy Item</button>
+</div>
+   </section>
+       <section class="raptor-offers" id="Offers">
+
+  <div class="offers-heading">
+    <span class="offers-badge">🔥 LIMITED DEALS</span>
+    <h2>Raptor Special Offers</h2>
+    <p>Don't miss your chance to upgrade your gaming experience!</p>
+    <div class="heading-line"></div>
+  </div>
+
+  <div class="offers-grid">
+
+    <div class="offer-card offer-red">
+      <div class="offer-top">
+        <span class="offer-label">HOT DEAL</span>
+        <span class="offer-discount">30% OFF</span>
+      </div>
+      <div class="offer-image">
+        <img src="codm.png" alt="Call of Duty Mobile">
+        <span class="offer-icon">🔥</span>
+      </div>
+      <div class="offer-content">
+        <span class="offer-category">CALL OF DUTY MOBILE</span>
+        <h3>Special COD Points Offer</h3>
+        <p>It's time to upgrade your loadout!</p>
+        <div class="offer-prices">
+          <del>$140</del>
+          <strong>$100</strong>
+        </div>
+        <div class="offer-progress">
+          <div class="offer-progress-fill" style="width:75%"></div>
+        </div>
+        <small>Special deal with limited availability</small>
+      </div>
+    </div>
+    <div class="offer-card offer-blue">
+      <div class="offer-top">
+        <span class="offer-label">SPECIAL OFFER</span>
+        <span class="offer-discount">25% OFF</span>
+      </div>
+      <div class="offer-image">
+        <img src="pubg.png" alt="PUBG Mobile">
+        <span class="offer-icon">🎯</span>
+      </div>
+      <div class="offer-content">
+        <span class="offer-category">PUBG MOBILE</span>
+        <h3>Special PUBG UC Offer</h3>
+        <p>Get ready for a legendary drop!</p>
+        <div class="offer-prices">
+          <del>$120</del>
+          <strong>$90</strong>
+        </div>
+        <div class="offer-progress">
+          <div class="offer-progress-fill" style="width:60%"></div>
+        </div>
+        <small>Special deal with limited availability</small>
+      </div>
+    </div>
+    <div class="offer-card offer-green">
+      <div class="offer-top">
+        <span class="offer-label">GAMER DEAL</span>
+        <span class="offer-discount">20% OFF</span>
+      </div>
+      <div class="offer-image">
+        <img src="freefire.png" alt="Free Fire">
+        <span class="offer-icon">💎</span>
+      </div>
+      <div class="offer-content">
+        <span class="offer-category">FREE FIRE</span>
+        <h3>Special Free Fire Diamonds Offer</h3>
+        <p>Customize your style with amazing items!</p>
+        <div class="offer-prices">
+          <del>$112.50</del>
+          <strong>$90</strong>
+        </div>
+        <div class="offer-progress">
+          <div class="offer-progress-fill" style="width:45%"></div>
+        </div>
+        <small>Special deal with limited availability</small>
+      </div>
+    </div>
+  </div> <br>
+  <button class="Buy1">Buy Offer</button>
+  <div class="offers-footer">
+    <span>⚡</span>
+    <p>Raptor — The Choice of Professional Gamers</p>
+    <span>⚡</span>
+  </div>
+
+</section>
+       <br>
+       <h2 id="About">About US</h2>
+       <p class="Info">Buy Your Game Products🖥</p>
+       <p class="Info">Fast Delivery✅️</p>
+       <p class="Info">Secure Shopping🏷</p> <br>
+       <h2 id="Contact">Contact
+       </h2>
+       <form>
+         <input type="text" placeholder="enter your name"> <br>
+         <input type="email" placeholder="enter your email"> <br>
+         <input type="text" placeholder="enter your message"> <br>
+         <button class="Buy1">Send PM</button>
+       </form>
+   </header>
+   <hr>
+   <footer>
+     <p10>Copy right ♡2026 for Raptor Gaming Store</p10>
+   </footer>
+</body>
+
+</html>

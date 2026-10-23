@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet"href="gs.css">
+   <script src="gs.js"></script>
+  <title>فروشگاه بازی</title>
+</head>
+<body>
+   <header>
+     <div id="scroll-progress"></div>
+     <button id="topBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">⬆</button>
+     <marquee>
+       به فروشگاه رپتور خوش آمدید
+     </marquee>
+     <h1 id="Home">فروشگاه بازی رپتور</h1>
+     <hr>
+     <div class="header-tools">
+
+  <button class="menu-icon" onclick="toggleMenu()">☰</button>
+   
+  <div class="search-box">
+    <input type="search" id="searchInput" placeholder="...جستجو">
+    <button type="button" onclick="searchProducts()">⌕</button>
+  </div>
+
+  <button class="user-icon" onclick="showUser()">👤</button>
+
+</div>
+
+<div id="menu" class="menu">
+  <button class="close-menu" onclick="toggleMenu()">×</button>
+  <h3>منوی رپتور</h3>
+  <a href="#Home">خانه</a>
+  <a href="#Products">محصولات</a>
+  <a href="#Offers">پیشنهادها</a>
+  <a href="#About">درباره ما</a>
+  <a href="#Contact">ارتباط با ما</a>
+  <a href="gs.html">English</a>
+  <button class="theme-btn" onclick="toggleTheme()">
+</div>
+   <section class="Products">
+     <h2 id="Products">محصولات</h2>
+     <div class="products-container">
+  <div class="product-card">
+    <img src="codm.png">
+    <h3>کالاف دیوتی موبایل</h3>
+    <p>سیپی کالاف دیوتی</p>
+    <div class="product-price">قیمت: 140$</div>
+  </div>
+
+  <div class="product-card">
+    <img src="pubg.png" alt="پابجی موبایل">
+    <h3>پابجی موبایل</h3>
+    <p>یوسی پابجی موبایل</p>
+    <div class="product-price">قیمت: 120$</div>
+  </div>
+
+  <div class="product-card">
+    <img src="freefire.png" alt="فری فایر">
+    <h3>فری فایر</h3>
+    <p>جم فری فایر</p>
+    <div class="product-price">قیمت: 112.50$</div>
+  </div>
+
+  <div class="product-card">
+    <img src="clash.png" alt="کلش آف کلنز">
+    <h3>کلش آف کلنز</h3>
+    <p>جم کلش آف کلنز</p>
+    <div class="product-price">قیمت: 70$</div>
+  </div>
+
+  <div class="product-card">
+    <img src="deltaforce.png" alt="دلتا فورس">
+    <h3>دلتا فورس</h3>
+    <p>جم دلتا فورس</p>
+    <div class="product-price">قیمت: 90$</div>
+  </div>
+
+  <div class="product-card">
+    <img src="efootball.png" alt="ای فوتبال">
+    <h3>ای فوتبال</h3>
+    <p>پوینت ای فوتبال</p>
+    <div class="product-price">قیمت: 75$</div>
+  </div>
+
+  <div class="product-card">
+    <img src="samp.png" alt="سمپ">
+    <h3>سمپ</h3>
+    <p>گلد سمپ</p>
+    <div class="product-price">قیمت: 70$</div>
+  </div>
+
+  <div class="product-card">
+    <img src="bool.png" alt="بیلیارد">
+    <h3>بیلیارد</h3>
+    <p>پوینت بیلیارد</p>
+    <div class="product-price">قیمت: 75$</div>
+  </div>
+   <button class="Buy1">خرید محصول</button>
+</div>
+   </section>
+       <section class="raptor-offers" id="Offers">
+
+  <div class="offers-heading">
+    <span class="offers-badge">🔥 پیشنهادهای محدود</span>
+    <h2>پیشنهادهای ویژه رپتور</h2>
+    <p>فرصت ارتقای تجربه بازی خود را از دست ندهید!</p>
+    <div class="heading-line"></div>
+  </div>
+
+  <div class="offers-grid">
+
+    <div class="offer-card offer-red">
+      <div class="offer-top">
+        <span class="offer-label">پیشنهاد داغ</span>
+        <span class="offer-discount">۳۰٪ تخفیف</span>
+      </div>
+      <div class="offer-image">
+        <img src="codm.png" alt="کالاف دیوتی موبایل">
+        <span class="offer-icon">🔥</span>
+      </div>
+      <div class="offer-content">
+        <span class="offer-category">کالاف دیوتی</span>
+        <h3>پیشنهاد ویژه امتیازهای کالاف</h3>
+        <p>وقت ارتقای تجهیزات بازی شماست!</p>
+        <div class="offer-prices">
+          <del>$140</del>
+          <strong>$100</strong>
+        </div>
+        <div class="offer-progress">
+          <div class="offer-progress-fill" style="width:75%"></div>
+        </div>
+        <small>پیشنهاد ویژه با موجودی محدود</small>
+      </div>
+    </div>
+    <div class="offer-card offer-blue">
+      <div class="offer-top">
+        <span class="offer-label">پیشنهاد ویژه</span>
+        <span class="offer-discount">۲۵٪ تخفیف</span>
+      </div>
+      <div class="offer-image">
+        <img src="pubg.png" alt="پابجی موبایل">
+        <span class="offer-icon">🎯</span>
+      </div>
+      <div class="offer-content">
+        <span class="offer-category">پابجی موبایل</span>
+        <h3>پیشنهاد ویژه یوسی پابجی</h3>
+        <p>برای یک فرود افسانه‌ای آماده شوید!</p>
+        <div class="offer-prices">
+          <del>$120</del>
+          <strong>$90</strong>
+        </div>
+        <div class="offer-progress">
+          <div class="offer-progress-fill" style="width:60%"></div>
+        </div>
+        <small>پیشنهاد ویژه با موجودی محدود</small>
+      </div>
+    </div>
+    <div class="offer-card offer-green">
+      <div class="offer-top">
+        <span class="offer-label">پیشنهاد گیمرها</span>
+        <span class="offer-discount">۲۰٪ تخفیف</span>
+      </div>
+      <div class="offer-image">
+        <img src="freefire.png" alt="فری فایر">
+        <span class="offer-icon">💎</span>
+      </div>
+      <div class="offer-content">
+        <span class="offer-category">فری فایر</span>
+        <h3>پیشنهاد ویژه الماس‌های فری فایر</h3>
+        <p>با آیتم‌های شگفت‌انگیز سبک خود را شخصی‌سازی کنید!</p>
+        <div class="offer-prices">
+          <del>$112.50</del>
+          <strong>$90</strong>
+        </div>
+        <div class="offer-progress">
+          <div class="offer-progress-fill" style="width:45%"></div>
+        </div>
+        <small>پیشنهاد ویژه با موجودی محدود</small>
+      </div>
+    </div>
+  </div> <br>
+  <button class="Buy1">خرید پیشنهاد</button>
+  <div class="offers-footer">
+    <span>⚡</span>
+    <p>رپتور — انتخاب گیمرهای حرفه‌ای</p>
+    <span>⚡</span>
+  </div>
+
+</section>
+       <br>
+       <h2 id="About">درباره ما</h2>
+       <p class="Info">خرید محصولات بازی شما🖥</p>
+       <p class="Info">تحویل سریع✅️</p>
+       <p class="Info">خرید امن🏷</p> <br>
+       <h2 id="Contact">ارتباط با ما</h2>
+       <form>
+         <input type="text" placeholder="نام خود را وارد کنید"> <br>
+         <input type="email" placeholder="ایمیل خود را وارد کنید"> <br>
+         <input type="text" placeholder="پیام خود را وارد کنید"> <br>
+         <button class="Buy1">ارسال پیام</button>
+       </form>
+   </header>
+   <hr>
+   <footer>
+     <p10>حق نشر ♡۲۰۲۶ برای فروشگاه بازی رپتور</p10>
+   </footer>
+</body>
+
+</html>
